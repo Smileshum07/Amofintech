@@ -10938,7 +10938,7 @@ body {
   padding: 0px;
   border: 0px;
   font-family: "Manrope";
-  font-size: 18.5px;
+  font-size: calc(18.5px + 16px * (100vw / 1496));
   color: #000000;
   font-weight: 400;
 }
@@ -10963,13 +10963,13 @@ body {
 }
 
 h1, .h1, h2, .h2 {
-  font-size: 55px;
+  font-size: calc(55px + 43px * (100vw / 1496));
   font-weight: 700;
   color: #000000;
 }
 
 h3, .h3 {
-  font-size: 26px;
+  font-size: calc(26px + 14px * (100vw / 1496));
   font-weight: 600;
 }
 
@@ -11010,7 +11010,7 @@ p {
 .technologies_item {
   border-radius: 20px;
   border: none;
-  font-size: 26px;
+  font-size: calc(26px + 14px * (100vw / 1496));
   color: #FFFFFF;
   font-weight: 600;
 }
