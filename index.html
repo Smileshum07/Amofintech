@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="scss/main.css">
     <title>AMO FinTech LLC</title>
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target="#Navbar">
     
         <div class="wrapper container-fluid pt-2 pt-md-5 pb-5 ps-5">
             <!--header-->
-            <header class="header row my-5">
+            <header class="header row my-4 my-lg-5">
 
-                <nav class="header_nav navbar navbar-expand-lg fixed-top bg-white bg-opacity-75">
-                    <div class="container-fluid mx-5">
+                <nav class="header_nav navbar navbar-expand-lg fixed-top bg-white bg-opacity-75" id="Navbar">
+                    <div class="container-fluid justify-content-between mx-2 mx-lg-5">
                         <a href="#" class="header_logo navbar-brand col-4">
-                            <img src="https://www.amofintech.com/wp-content/uploads/2022/12/amo_logo.png" class="logo img w-75 w-md-100 h-75 h-md-100" width="288px" height="30px" alt="Logo">
+                            <img src="https://www.amofintech.com/wp-content/uploads/2022/12/amo_logo.png" class="logo img w-md-100 h-auto" width="288px" height="30px" alt="Logo">
                         </a>
                         <button class="navbar-toggler me-0 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                             aria-controls="offcanvasNavbar">
@@ -28,7 +28,7 @@
                             <div class="offcanvas-header justify-content-end">
                                 <button type="button" class="btn-close bg-white bg-opacity-75 m-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                             </div>
-                            <ul class="header_nav navbar-nav justify-content-end flex-grow-1 my-4 me-3">
+                            <ul class="header_nav nav-pills navbar-nav justify-content-end flex-grow-1 my-4 me-3">
                                 <li class="nav-item">
                                     <a class="nav-link mx-4" href="#solutions">Solutions</a>
                                 </li>
@@ -47,45 +47,45 @@
                 </nav>
             </header>
             <!--main-->
-            <main class="main conteiner-fluid row">
+            <main data-bs-spy="scroll" data-bs-target="#Navbar" data-bs-offset="0" class="main conteiner-fluid row">
                 <!--baner-->
-                <div class="main_baner row text-center mx-0 px-5 py-5 align-content-center rounded-4 bg-light">
+                <div class="main_baner conteiner-fluid row text-center mx-0 px-5 py-5 rounded-4 bg-light">
                     <h1 class="main_baner_title mt-1 mt-lg-5 px-1 px-lg-5 pt-1 pt-lg-5 col-12">
                         We are a Ukrainian fintech company that makes complex solutions simple
                     </h1>
-                    <span class="main_baner_content me-1 me-lg-5 mb-1 mb-lg-5 px-1 px-lg-5 pt-1 pt-lg-3 pb-1 pb-lg-5 col-12">
+                    <span class="main_baner_content mx-1 mx-lg-5 mb-1 mb-lg-5 px-1 px-lg-5 pt-1 pt-lg-3 pb-1 pb-lg-5 col-12">
                     Our success is built upon the best-in-class solutions, modern technology, flexible products, well-designed customer
                     experience, trust relationships, and unique credit decisioning expertise
                     </span>
                 </div>
                 <!--solutions-->
-                <div id="solutions" class="row mx-2 mx-lg-4 my-3 my-lg-5 py-5 px-3 px-lg-5">
-                    <div class="conteiner-fluid row">
+                <div id="solutions" class="conteiner-fluid row mx-0 mx-md-4 my-1 my-lg-5 py-0 py-md-5 px-1 px-lg-5">
+                    <div class="conteiner-fluid text-wrap row">
                         <h2 class="solution_title py-4 col-12">Our Solutions</h2>
                         <p class="solution_content text-start col-12">
                             amofintech is wholly focused on delivering a solution for payment businesses, banks, marketplaces, chain stores that
                             enhances the customer proposition of their clients – without upfront investment in systems, or process changes.
                         </p>
-                        <p class="col-12 py-4">
+                        <p class="col-12 py-1 py-md-4">
                             Our solutions let payments and data flow across all channels and consumer touchpoints.
                         </p>
                     </div>
-                    <div class="solution_items conteiner-fluid row">
-                        <div class="d-lg-flex flex-wrap">
-                            <div class="solution_item first h-auto px-5 py-4 col">
+                    <div class="solution_items row">
+                        <div class="d-md-flex flex-wrap justify-content-center conteiner-fluid mx-0 row">
+                            <div class="solution_item first px-5 py-4 col-lg col-12">
                                 <h3 class="solution_item_titel pb-3 row">amo for banking</h3>
                                 <p class="solution_item_content text-start row">
                                     Instant issue and process prepaid, debit or credit cards with our high-technology solution, which empowers you to build,
                                     run and optimize your card products.
                                 </p>
                             </div>
-                            <div class="solution_item second h-auto px-5 py-4 col">
+                            <div class="solution_item second px-5 py-4 col-lg col-12">
                                 <h3 class="solution_item_titel pb-3 row">amo for transactions</h3>
                                 <p class="solution_item_content text-start row">
                                     A full set of modular payment-as-a-service solutions to transform your business.
                                 </p>
                             </div>
-                            <div class="solution_item third h-auto px-5 py-4 col">
+                            <div class="solution_item third px-5 py-4 col-lg col-12">
                                 <h3 class="solution_item_titel row pb-3">amo for retail</h3>
                                 <p class="solution_item_content text-start row">
                                 Turnkey solution is based on a mobile application that will allow you to raise customer loyalty to a new level.
@@ -93,14 +93,14 @@
                             </div>
                             <div class="solution_item_fourth h-auto text-start px-5 py-4 col-12">
                                 <h3 class="solution_item_titel pb-3 row">partner ecosystem</h3>
-                                <p class="solution_item_content  row">
+                                <p class="solution_item_content row">
                                     Our customer-centric platform for partners enables the delivery of smarter, more profitable products that offer
                                     personalized experiences.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="solution pe-5 mt-5 row">
+                    <div class="solution ps-4 mt-5 row">
                         <h2 class="solution_title mb-5 pe-4 row">We understand the customers’ journey and know what solutions you need</h2>
                         <p class="solution_content text-start ps-3 pe-0 pe-lg-5 row">
                             We’re creating a more open world, where anyone, anywhere, can open cards, receive or make any kind of payment. We’re
@@ -109,8 +109,8 @@
                     </div>
                 </div>
                 <!--technologies-->
-                <div id="technologies" class="row py-1 py-lg-5 px-2 px-lg-4 mx-2 mx-lg-5">
-                    <div class="ms-2 ms-lg-0 mb-5 row">
+                <div id="technologies" class="row py-1 py-lg-5 px-1 px-lg-5 mx-0 mx-md-4">
+                    <div class="ms-2 ms-lg-0 mb-2 mb-lg-5 row">
                         <h2 class="technologies_title mb-4 row">Our Technologies</h2>
                         <p class="technologies_content text-start row">
                             Our technologies are a combination of industrial solutions with systems of our own development to meet the most
@@ -145,7 +145,7 @@
                     </div>
                 </div>
                 <!--services-->
-                <div id="services" class="px-2 px-lg-4 py-0 py-lg-5 mx-2 mx-lg-4 my-1 my-lg-5">
+                <div id="services" class="py-0 py-lg-5 my-1 my-lg-5 px-1 px-lg-5 mx-0 mx-md-4">
                     <div class="d-flex flex-wrap">
                         <div class="mb-4 ms-0 ms-lg-5 row">
                             <h2 class="services_title mb-4 col-12">Our Services</h2>
