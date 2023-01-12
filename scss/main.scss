@@ -6,6 +6,7 @@ $font-size-h1_h2: 55px;
 $font-size-h3: 26px;
 $font-size-nav: 20px;
 $font-size-main: 18.5px;
+$font-size-schame: 16px;
 $font-bottom: 14px;
 
 //fonts-weight
@@ -138,7 +139,7 @@ body {
         .services_schame_item {
             color: $element-color;
             border-radius: 20px;
-            font-size: calc(16px + 12px * (100vw / 1496));
+            font-size: calc(#{$font-size-schame} + 10px * (100vw / 1496));
     
             p {
                 
@@ -191,7 +192,7 @@ body {
             background: #2e2e2e;
     
             .footer_bottom_AMO {
-                font-size: $font-bottom;
+                font-size: $font-bottom ;
                 font-weight: $font-weight-main;
                 color: $bottom-color;
             }
