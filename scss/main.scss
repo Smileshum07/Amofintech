@@ -32,25 +32,20 @@ body {
     padding: 0px;
     border: 0px;
     font-family: 'Manrope';
-    font-size: calc(#{$font-size-main} + 16px * (100vw / 1496));
+    font-size: calc(#{$font-size-main} + 16px * (100vw / 1280));
     color: $main-color;
     font-weight: $font-weight-main;
 
         .navbar {
             backdrop-filter: blur(10px);
-      
-    
+            
             .nav-link {
                 font-size: $font-size-nav;
                 font-weight: $font-weight-nav;
                 color: $nav-color;
             }
 
-            .nav-link.activ {
-                border: none;
-                border-bottom: 2px;
-                background: none;
-            }
+               
         
             .offcanvas {
                 background: #3587F2;
@@ -79,40 +74,42 @@ body {
     
         }
     
-    
-        .solution_items {
-            color: $element-color;
-    
-    
-            .solution_item {
+        .solution {
+            background: url(./img/decor.png);
+
+            .solution_items {
+                color: $element-color;
+        
+        
+                .solution_item {
+                    border-radius: 20px;
+                    
+                    .solution_item_content {
+                        font-size: calc(#{$font-size-main} + 12px * (100vw / 1496));
+                }
+                    
+                }
+            }
+        
+            .first {
+                background-color: #3587F2;
+            }
+        
+            .second {
+                background-color: #04BFBF;
+            }
+        
+            .third {
+                background-color: #F2B90F;
+            }
+        
+            .solution_item_fourth {
+                height: 180px;
+                background-color: #0ABF16;
                 border-radius: 20px;
-                
-                .solution_item_content {
-                    font-size: calc(#{$font-size-main} + 12px * (100vw / 1496));
-            }
-                
+        
             }
         }
-    
-        .first {
-            background-color: #3587F2;
-        }
-    
-        .second {
-            background-color: #04BFBF;
-        }
-    
-        .third {
-            background-color: #F2B90F;
-        }
-    
-        .solution_item_fourth {
-            height: 180px;
-            background-color: #0ABF16;
-            border-radius: 20px;
-    
-        }
-    
     
         .technologies_item {
             border-radius: 20px;
