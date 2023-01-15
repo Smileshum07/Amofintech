@@ -10,16 +10,17 @@
 </head>
 <body data-bs-spy="scroll" data-bs-target="#Navbar">
     
-        <div class="wrapper container-fluid pt-2 pt-md-5 pb-5 ps-5">
+        <div class="wrapper container-fluid pt-2 pt-md-5 pb-5 ps-4 ps-md-5">
             <!--header-->
             <header class="header row my-4 my-lg-5">
 
                 <nav class="header_nav navbar navbar-expand-lg fixed-top bg-white bg-opacity-75 row" id="Navbar">
                     <div class="container-fluid justify-content-between mx-2 mx-lg-5">
-                        <a href="#" class="header_logo navbar-brand ps-3 ps-lg col col-lg-6">
-                            <img src="https://www.amofintech.com/wp-content/uploads/2022/12/amo_logo.png" class="logo img-fluid" width="288px" height="30px" alt="Logo">
+                        <a href="#" class="header_logo navbar-brand ms-3 ms-lg col col-lg-6">
+                            <img src="https://www.amofintech.com/wp-content/uploads/2022/12/amo_logo.png" class="logo img-fluid"
+                                width="288px" height="30px" alt="Logo">
                         </a>
-
+                
                         <ul class="header_nav nav-pills navbar-nav justify-content-end text-end flex-grow-1 my-4 me-3 d-none d-lg-flex">
                             <li class="nav-item">
                                 <a class="nav-link mx-0 mx-xl-4" href="#solutions">Solutions</a>
@@ -35,32 +36,34 @@
                             </li>
                         </ul>
                         <!--offcanvas-->
-                        <button class="navbar-toggler border-0 me-0 me-md-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                            aria-controls="offcanvasNavbar">
+                        <button class="navbar-toggler border-0 text-dark me-3 me-lg" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-                    
-                        <div class="offcanvas offcanvas-end col-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
-                            <div class="row">
-                                <div class="offcanvas-header justify-content-end mb-5 col-12">
-                                    <button type="button" class="btn-close bg-white bg-opacity-75 rounded-5 m-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                
+                        <div class="offcanvas offcanvas-end bg-primary col-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                            <div class="bg-primary d-block d-lg-none">
+                                <div class="offcanvas-header bg-primary justify-content-end mb-5">
+                                    <button type="button" class="btn-close bg-white bg-opacity-75 rounded-5 m-1"
+                                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body  my-5 mx-5 col-12">
-                                    <ul class="header_nav navbar-nav justify-content-center my-5 mx-5 d-flex d-lg-none">
+                                <div class="offcanvas-body bg-primary my-5 mx-5">
+                                    <ul class="header_nav navbar-nav my-5 mx-0 mx-sm-4 d-flex d-lg-none">
                                         <li class="nav-item">
-                                            <a class="nav-link mx-4" href="#solutions">Solutions</a>
+                                            <a class="nav-link mx-0 mx-sm-4" href="#solutions">Solutions</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link mx-4" href="#technologies">Technologies</a>
+                                            <a class="nav-link mx-0 mx-sm-4" href="#technologies">Technologies</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link mx-4" href="#services">Services</a>
+                                            <a class="nav-link mx-0 mx-sm-4" href="#services">Services</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link ms-4" href="#contacts">Contacts</a>
+                                            <a class="nav-link mx-0 mx-sm-4" href="#contacts">Contacts</a>
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="offcanvas-bottom bg-primary p-5"></div>
                             </div>
                         </div>
                     </div>
@@ -69,7 +72,7 @@
             <!--main-->
             <main data-bs-spy="scroll" data-bs-target="#Navbar" data-bs-offset="0" class="main conteiner-fluid row">
                 <!--baner-->
-                <div class="main_baner conteiner-fluid row text-center px-5 py-5 rounded-4 bg-light">
+                <div class="main_baner conteiner-fluid row text-center px-5 py-5 mx-1 mx-lg-0 rounded-4 bg-light">
                     <h1 class="main_baner_title mt-1 mt-lg-5 px-1 px-lg-5 pt-1 pt-lg-5 col-12">
                         We are a Ukrainian fintech company that makes complex solutions simple
                     </h1>
@@ -79,7 +82,7 @@
                     </span>
                 </div>
                 <!--solutions-->
-                <div id="solutions" class="conteiner-fluid row mx-0 mx-md-4 my-1 my-lg-5 py-0 py-md-5 px-1 px-lg-5">
+                <div id="solutions" class="conteiner-fluid row mx-0 mx-md-4 my-1 my-lg-5 py-0 py-md-5 px-0 px-lg-5">
                     <div class="conteiner-fluid text-wrap row">
                         <h2 class="solution_title py-4 col-12">Our Solutions</h2>
                         <p class="solution_content text-start col-12">
@@ -167,20 +170,20 @@
                 <!--services-->
                 <div id="services" class="py-0 py-xxl-5 my-1 my-xxl-5 px-2 px-lg-4 mx-0 mx-md-2">
                     <div class="d-flex flex-wrap">
-                        <div class="mb-4 ms-0 ms-lg-5 row">
+                        <div class="mb-4 ms-0 me-1 ms-lg-5 text-wrap row">
                             <h2 class="services_title mb-4 col-12">Our Services</h2>
                             <p class="services_content text-start col-12">
                                 amofintech develops specialized environments for your industry
                             </p>
                         </div>
                         <div class="services_schame conteiner-fluid row">
-                            <div class="services_schame_item banks px-3 px-lg-5 pt-3 pt-lg-5 mx-0 mx-md-5 mb-4 mb-xxl-0 col-11 col-lg-4">
+                            <div class="services_schame_item banks px-3 px-lg-5 pt-3 pt-lg-5 mx-0 mx-lg-5 mb-4 mb-xxl-0 col-11 col-lg-4">
                                 <h3 class="services_schame_item_title mb-3 col-12">for Banks</h3>
                                 <p class="services_schame_item_content text-start col-12">
                                     We help banks create appealing customer experiences, engineering secure and reliable applications, and bringing industry
                                     innovations to the mix.
                                 </p>
-                                <img class="img-fluid" src="./scss/img/banks.png" alt="banks">
+                                <img class="img-fluid text-center" src="./scss/img/banks.png" alt="banks">
                             </div>
                             <div class="col-12 col-lg-7">
                                 <div class="services_schame_item merchants conteiner-fluid me-3 me-md-0 mb-4 px-2 px-md-4 py-3 pb-md-0 pt-md-5 row">
