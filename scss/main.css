@@ -10938,155 +10938,120 @@ body {
   padding: 0px;
   border: 0px;
   font-family: "Manrope";
-  font-size: calc(18.5px + 16px * (100vw / 1496));
+  font-size: calc(18.5px + 16px * (100vw / 1280));
   color: #000000;
   font-weight: 400;
 }
-
-.navbar {
+body .navbar {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
-
-.nav-link {
+body .navbar .nav-link {
   font-size: 20px;
   font-weight: 500;
   color: #333333;
 }
-
-.offcanvas {
-  background: #3587F2;
-}
-
-.btn-close {
-  border-radius: 50%;
-}
-
-h1, .h1, h2, .h2 {
+body h1, body .h1,
+body h2,
+body .h2 {
   font-size: calc(55px + 43px * (100vw / 1496));
   font-weight: 700;
   color: #000000;
 }
-
-h3, .h3 {
+body h3, body .h3 {
   font-size: calc(26px + 14px * (100vw / 1496));
   font-weight: 600;
 }
-
-p {
-  line-height: 35px;
-  word-spacing: 1px;
+body p {
+  line-height: 25px;
+  word-spacing: 0.9px;
 }
-
-.solution_items {
+body .solution_items {
   color: #FFFFFF;
 }
-.solution_items .solution_item {
-  width: 390px;
-  height: auto;
+body .solution_items .solution_item {
   border-radius: 20px;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
-
-.first {
+body .solution_items .solution_item .solution_item_content {
+  font-size: calc(18.5px + 12px * (100vw / 1496));
+}
+body .first {
   background-color: #3587F2;
 }
-
-.second {
+body .second {
   background-color: #04BFBF;
 }
-
-.third {
+body .third {
   background-color: #F2B90F;
 }
-
-.solution_item_fourth {
+body .solution_item_fourth {
   height: 180px;
   background-color: #0ABF16;
   border-radius: 20px;
 }
-
-.technologies_item {
+body .technologies_item {
   border-radius: 20px;
   border: none;
   font-size: calc(26px + 14px * (100vw / 1496));
   color: #FFFFFF;
   font-weight: 600;
 }
-
-.card {
+body .card {
   background: #3587F2;
 }
-
-.payment {
+body .payment {
   background: #F2B90F;
 }
-
-.mobile {
+body .mobile {
   background: #04BFBF;
 }
-
-.api {
+body .api {
   background: #0ABF16;
 }
-
-.services_schame_item {
+body .services_schame_item {
   color: #FFFFFF;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: calc(16px + 10px * (100vw / 1496));
 }
-.services_schame_item p {
-  line-height: 25px;
-}
-
-.banks {
+body .banks {
   background: #3587F2;
 }
-
-.merchants {
+body .merchants {
   background: #04BFBF;
 }
-
-.business {
+body .business {
   background: #F2B90F;
 }
-
-footer {
+body footer {
   background: #000000;
 }
-footer .footer_main {
+body footer .footer_main {
   color: #FFFFFF;
 }
-footer .footer_main h2, footer .footer_main .h2 {
+body footer .footer_main h2, body footer .footer_main .h2 {
   color: #FFFFFF;
 }
-
-.form-control {
+body .form-control {
   background: #333333;
   border: none;
 }
-
-.link {
+body .link {
   text-decoration: none;
 }
-
-.btn {
+body .btn {
   background: #333333;
   color: #FFFFFF;
   font-weight: 600;
   font-size: 12px;
 }
-
-.footer_bottom {
+body .footer_bottom {
   background: #2e2e2e;
 }
-.footer_bottom .footer_bottom_AMO {
+body .footer_bottom .footer_bottom_AMO {
   font-size: 14px;
   font-weight: 400;
   color: #777777;
 }
-
-.svg {
+body .svg {
   color: #777777;
 }/*# sourceMappingURL=main.css.map */

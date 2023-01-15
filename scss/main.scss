@@ -44,18 +44,10 @@ body {
                 font-weight: $font-weight-nav;
                 color: $nav-color;
             }
-
-               
-        
-            .offcanvas {
-                background: #3587F2;
-        
-            }
-        
-            .btn-close {
-                border-radius: 50%;
-            }
         }
+
+
+        
         h1,
         h2 {
             font-size: calc(#{$font-size-h1_h2} + 43px * (100vw / 1496));
@@ -69,14 +61,16 @@ body {
         }
     
         p {
-            line-height: 5px;
+            line-height: 25px;
             word-spacing: 0.9px;
     
         }
+
+
     
         .solution {
-            background: url(./img/decor.png);
-
+           
+        }
             .solution_items {
                 color: $element-color;
         
@@ -109,7 +103,7 @@ body {
                 border-radius: 20px;
         
             }
-        }
+        
     
         .technologies_item {
             border-radius: 20px;
