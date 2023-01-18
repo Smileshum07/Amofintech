@@ -32,9 +32,10 @@ body {
     padding: 0px;
     border: 0px;
     font-family: 'Manrope';
-    font-size: calc(#{$font-size-main} + 16px * (100vw / 1280));
+    font-size: calc(14px + 4.5 * (100vw / 1280));
     color: $main-color;
     font-weight: $font-weight-main;
+    
 
     .navbar {
         backdrop-filter: blur(10px);
@@ -50,18 +51,20 @@ body {
 
     h1,
     h2 {
-        font-size: calc(#{$font-size-h1_h2} + 43px * (100vw / 1496));
+        font-size: calc(18px + 37 * (100vw / 1280));
         font-weight: $font-weight-h1_h2;
         color: $main-color;
     }
 
+    
+
     h3 {
-        font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
+        font-size: calc(16px + 8 * (100vw / 1280));
         font-weight: $font-weight-h3;
     }
 
     p {
-        line-height: 25px;
+        line-height: normal;
         word-spacing: 0.9px;
 
     }
@@ -69,15 +72,12 @@ body {
     .solution_items {
         color: $element-color;
 
-
-        .solution_item {
-            border-radius: 20px;
-
             .solution_item_content {
-                font-size: calc(#{$font-size-main} + 12px * (100vw / 1496));
+                font-size: calc(14px + 4.5 * (100vw / 1280));
+                line-height: normal;
             }
 
-        }
+        
     }
 
     .first {
@@ -92,10 +92,10 @@ body {
         background-color: #F2B90F;
     }
 
-    .solution_item_fourth {
+    .fourth {
         height: 180px;
         background-color: #0ABF16;
-        border-radius: 20px;
+        
 
     }
 
@@ -103,7 +103,7 @@ body {
     .technologies_item {
         border-radius: 20px;
         border: none;
-        font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
+        font-size: calc(16px + 8 * (100vw / 1280));
         color: $element-color;
         font-weight: $font-weight-h3;
     }
@@ -131,7 +131,7 @@ body {
     .services_schame_item {
         color: $element-color;
         border-radius: 20px;
-        font-size: calc(#{$font-size-schame} + 10px * (100vw / 1496));
+        font-size: calc(14px + 4 * (100vw / 1280));
 
     }
 
@@ -180,7 +180,7 @@ body {
         background: #2e2e2e;
 
         .footer_bottom_AMO {
-            font-size: $font-bottom ;
+            font-size: calc(8px + 4 * (100vw / 1280));
             font-weight: $font-weight-main;
             color: $bottom-color;
         }

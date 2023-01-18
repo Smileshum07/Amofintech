@@ -10938,7 +10938,7 @@ body {
   padding: 0px;
   border: 0px;
   font-family: "Manrope";
-  font-size: calc(18.5px + 16px * (100vw / 1280));
+  font-size: calc(14px + 0.3515625vw);
   color: #000000;
   font-weight: 400;
 }
@@ -10954,26 +10954,24 @@ body .navbar .nav-link {
 body h1, body .h1,
 body h2,
 body .h2 {
-  font-size: calc(55px + 43px * (100vw / 1496));
+  font-size: calc(18px + 2.890625vw);
   font-weight: 700;
   color: #000000;
 }
 body h3, body .h3 {
-  font-size: calc(26px + 14px * (100vw / 1496));
+  font-size: calc(16px + 0.625vw);
   font-weight: 600;
 }
 body p {
-  line-height: 25px;
+  line-height: normal;
   word-spacing: 0.9px;
 }
 body .solution_items {
   color: #FFFFFF;
 }
-body .solution_items .solution_item {
-  border-radius: 20px;
-}
-body .solution_items .solution_item .solution_item_content {
-  font-size: calc(18.5px + 12px * (100vw / 1496));
+body .solution_items .solution_item_content {
+  font-size: calc(14px + 0.3515625vw);
+  line-height: normal;
 }
 body .first {
   background-color: #3587F2;
@@ -10984,15 +10982,14 @@ body .second {
 body .third {
   background-color: #F2B90F;
 }
-body .solution_item_fourth {
+body .fourth {
   height: 180px;
   background-color: #0ABF16;
-  border-radius: 20px;
 }
 body .technologies_item {
   border-radius: 20px;
   border: none;
-  font-size: calc(26px + 14px * (100vw / 1496));
+  font-size: calc(16px + 0.625vw);
   color: #FFFFFF;
   font-weight: 600;
 }
@@ -11011,7 +11008,7 @@ body .api {
 body .services_schame_item {
   color: #FFFFFF;
   border-radius: 20px;
-  font-size: calc(16px + 10px * (100vw / 1496));
+  font-size: calc(14px + 0.3125vw);
 }
 body .banks {
   background: #3587F2;
@@ -11048,7 +11045,7 @@ body .footer_bottom {
   background: #2e2e2e;
 }
 body .footer_bottom .footer_bottom_AMO {
-  font-size: 14px;
+  font-size: calc(8px + 0.3125vw);
   font-weight: 400;
   color: #777777;
 }
