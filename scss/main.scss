@@ -36,170 +36,158 @@ body {
     color: $main-color;
     font-weight: $font-weight-main;
 
-        .navbar {
-            backdrop-filter: blur(10px);
-            
-            .nav-link {
-                font-size: $font-size-nav;
-                font-weight: $font-weight-nav;
-                color: $nav-color;
-            }
+    .navbar {
+        backdrop-filter: blur(10px);
+
+        .nav-link {
+            font-size: $font-size-nav;
+            font-weight: $font-weight-nav;
+            color: $nav-color;
         }
+    }
 
 
-        
-        h1,
-        h2 {
-            font-size: calc(#{$font-size-h1_h2} + 43px * (100vw / 1496));
-            font-weight: $font-weight-h1_h2;
-            color: $main-color;
-        }
-    
-        h3 {
-            font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
-            font-weight: $font-weight-h3;
-        }
-    
-        p {
-            line-height: 25px;
-            word-spacing: 0.9px;
-    
-        }
+
+    h1,
+    h2 {
+        font-size: calc(#{$font-size-h1_h2} + 43px * (100vw / 1496));
+        font-weight: $font-weight-h1_h2;
+        color: $main-color;
+    }
+
+    h3 {
+        font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
+        font-weight: $font-weight-h3;
+    }
+
+    p {
+        line-height: 25px;
+        word-spacing: 0.9px;
+
+    }
+
+    .solution_items {
+        color: $element-color;
 
 
-    
-        .solution {
-           
-        }
-            .solution_items {
-                color: $element-color;
-        
-        
-                .solution_item {
-                    border-radius: 20px;
-                    
-                    .solution_item_content {
-                        font-size: calc(#{$font-size-main} + 12px * (100vw / 1496));
-                }
-                    
-                }
-            }
-        
-            .first {
-                background-color: #3587F2;
-            }
-        
-            .second {
-                background-color: #04BFBF;
-            }
-        
-            .third {
-                background-color: #F2B90F;
-            }
-        
-            .solution_item_fourth {
-                height: 180px;
-                background-color: #0ABF16;
-                border-radius: 20px;
-        
-            }
-        
-    
-        .technologies_item {
+        .solution_item {
             border-radius: 20px;
-            border: none;
-            font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
-            color: $element-color;
-            font-weight: $font-weight-h3;
-        }
-    
-        .card {
-            background: #3587F2;
-    
-        }
-    
-        .payment {
-            background: #F2B90F;
-        }
-    
-    
-    
-        .mobile {
-            background: #04BFBF;
-    
-        }
-    
-        .api {
-            background: #0ABF16;
-        }
-    
-        .services_schame_item {
-            color: $element-color;
-            border-radius: 20px;
-            font-size: calc(#{$font-size-schame} + 10px * (100vw / 1496));
-    
-            p {
-                
+
+            .solution_item_content {
+                font-size: calc(#{$font-size-main} + 12px * (100vw / 1496));
             }
-    
+
         }
-    
-        .banks {
-            background: #3587F2;
-    
-        }
-    
-        .merchants {
-            background: #04BFBF;
-        }
-    
-        .business {
-            background: #F2B90F;
-        }
-    
-        footer {
-            background: $main-color;
-    
-            .footer_main {
+    }
+
+    .first {
+        background-color: #3587F2;
+    }
+
+    .second {
+        background-color: #04BFBF;
+    }
+
+    .third {
+        background-color: #F2B90F;
+    }
+
+    .solution_item_fourth {
+        height: 180px;
+        background-color: #0ABF16;
+        border-radius: 20px;
+
+    }
+
+
+    .technologies_item {
+        border-radius: 20px;
+        border: none;
+        font-size: calc(#{$font-size-h3} + 14px * (100vw / 1496));
+        color: $element-color;
+        font-weight: $font-weight-h3;
+    }
+
+    .card {
+        background: #3587F2;
+
+    }
+
+    .payment {
+        background: #F2B90F;
+    }
+
+
+
+    .mobile {
+        background: #04BFBF;
+
+    }
+
+    .api {
+        background: #0ABF16;
+    }
+
+    .services_schame_item {
+        color: $element-color;
+        border-radius: 20px;
+        font-size: calc(#{$font-size-schame} + 10px * (100vw / 1496));
+
+    }
+
+    .banks {
+        background: #3587F2;
+
+    }
+
+    .merchants {
+        background: #04BFBF;
+    }
+
+    .business {
+        background: #F2B90F;
+    }
+
+    footer {
+        background: $main-color;
+
+        .footer_main {
+            color: $element-color;
+
+            h2 {
                 color: $element-color;
-    
-                h2 {
-                    color: $element-color;
-                }
             }
         }
-    
-        .form-control {
-            background: #333333;
-            border: none;
-        }
-    
-        .link {
-            text-decoration: none;
-        }
-    
-        .btn {
-            background: #333333;
-            color: $element-color;
-            font-weight: $font-weight-h3;
-            font-size: 12px;
-        }
-    
-        .footer_bottom {
-            background: #2e2e2e;
-    
-            .footer_bottom_AMO {
-                font-size: $font-bottom ;
-                font-weight: $font-weight-main;
-                color: $bottom-color;
-            }
-        }
-    
-        .svg {
+    }
+
+    .form-control {
+        background: #333333;
+        border: none;
+    }
+
+    .link {
+        text-decoration: none;
+    }
+
+    .btn {
+        background: #333333;
+        color: $element-color;
+        font-weight: $font-weight-h3;
+        font-size: 12px;
+    }
+
+    .footer_bottom {
+        background: #2e2e2e;
+
+        .footer_bottom_AMO {
+            font-size: $font-bottom ;
+            font-weight: $font-weight-main;
             color: $bottom-color;
         }
-    
+    }
+
+    .svg {
+        color: $bottom-color;
+    }
+
 }
-
-
-
