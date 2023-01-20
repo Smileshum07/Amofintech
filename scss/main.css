@@ -10933,7 +10933,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 body {
+  height: auto;
+  overflow-y: scroll;
+  position: relative;
   margin: 0px;
   padding: 0px;
   border: 0px;
@@ -10964,13 +10972,13 @@ body h3, body .h3 {
 }
 body p {
   line-height: normal;
-  word-spacing: 0.9px;
+  word-spacing: 4.4px;
 }
 body .solution_items {
   color: #FFFFFF;
 }
 body .solution_items .solution_item_content {
-  font-size: calc(14px + 0.3515625vw);
+  font-size: calc(12px + 0.390625vw);
   line-height: normal;
 }
 body .first {
