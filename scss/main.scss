@@ -90,7 +90,7 @@ body {
 
     h1,
     h2 {
-        font-size: calc(18px + 32 * (100vw / 1280));
+        font-size: calc(16px + 32 * (100vw / 1280));
         font-weight: $font-weight-h1_h2;
         color: $main-color;
     }
@@ -111,7 +111,7 @@ body {
     main {
         position: relative;
         
-        
+// animation baner 
         .gradient {
             background: 
             linear-gradient(29deg, rgba(37, 90, 246, 0.272233893557423) 46%, rgba(234, 246, 37, 0.272233893557423) 48%, rgba(214, 225, 246, 0.272233893557423) 49%, rgba(113, 162, 252, 0.272233893557423) 51%, rgba(62, 127, 244, 0.5887605042016807) 53%, rgba(246, 246, 214, 0.633578431372549) 55%, rgba(244, 242, 92, 0.633578431372549) 57%, rgba(45, 135, 251, 0.6896008403361344) 60%, rgba(239, 238, 93, 0.4318977591036415) 62%);
@@ -138,35 +138,46 @@ body {
                 background-position: 0% 50%;
             }
         }
-    //animation!!
-        .underline {
-            font-size: calc(18px + 32 * (100vw / 1280));
-           
-        }    
-         
-        .underline svg {
-            position: absolute;
-            width: 100%;
-            height: 5px;    
-            left: 0;
-            top: 0;
-            z-index: -2;
-        }    
-        .underline svg path {
-            fill: none;
-            animation: underline 3s infinite;
-            animation-delay: 0s;
-            opacity: 0;
-            animation-delay: 0.5s;
 
+   
+        .main_baner_underline {
+            font-size: calc(18px + 32 * (100vw / 1280));
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 0px;
+            margin-left: 42%;
         }
-        
-        @keyframes underline {
-            
-            100% {
+    //animation underline
+        svg path {
+            stroke-dasharray: 420;
+            stroke-dashoffset: 420;
+            animation: draw 2s forwards;
+        }
+
+        svg g {
+            fill-opacity: 0;
+            animation: fill-in 2s forwards;
+        }
+
+        @keyframes draw {
+            to {
                 stroke-dashoffset: 0;
-                
             }
+        }
+
+        @keyframes fill-in {
+            to {
+                fill-opacity: 1;
+            }
+            
+        }
+       
+   
+
+        .solutions_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 8%
         }
 
        .solution_items {
@@ -194,7 +205,17 @@ body {
             height: 180px;
             background-color: #0ABF16;
         }
+        .solution_bottom_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -1%
+        }
 
+        .technologies_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 5%
+        }
 
         .technologies_item {
             border-radius: 20px;
@@ -204,6 +225,17 @@ body {
             font-weight: $font-weight-h3;
         }
 
+        .technologies_bottom_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -1%
+        }
+
+        .services_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10%
+        }
         .card {
             background: #3587F2;
 
@@ -250,6 +282,36 @@ body {
             h2 {
                 color: $element-color;
             }
+        }
+
+        .footer_main_underline {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 18%
+        }
+
+        svg path {
+            stroke-dasharray: 420;
+            stroke-dashoffset: 420;
+            animation: draw 2s forwards;
+        }
+
+        svg g {
+            fill-opacity: 0;
+            animation: fill-in 2s forwards;
+        }
+
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes fill-in {
+            to {
+                fill-opacity: 1;
+            }
+            
         }
     }
    

@@ -10986,7 +10986,7 @@ body .navbar .offcanvas-body .nav-link:hover {
 body h1, body .h1,
 body h2,
 body .h2 {
-  font-size: calc(18px + 2.5vw);
+  font-size: calc(16px + 2.5vw);
   font-weight: 700;
   color: #000000;
 }
@@ -11037,36 +11037,48 @@ body main .gradient {
     background-position: 0% 50%;
   }
 }
-body main .underline {
+body main .main_baner_underline {
   font-size: calc(18px + 2.5vw);
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-left: 42%;
 }
-body main .underline svg {
-  position: absolute;
-  width: 100%;
-  height: 5px;
-  left: 0;
-  top: 0;
-  z-index: -2;
+body main svg path {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  -webkit-animation: draw 2s forwards;
+          animation: draw 2s forwards;
 }
-body main .underline svg path {
-  fill: none;
-  -webkit-animation: underline 3s infinite;
-          animation: underline 3s infinite;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  opacity: 0;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+body main svg g {
+  fill-opacity: 0;
+  -webkit-animation: fill-in 2s forwards;
+          animation: fill-in 2s forwards;
 }
-@-webkit-keyframes underline {
-  100% {
+@-webkit-keyframes draw {
+  to {
     stroke-dashoffset: 0;
   }
 }
-@keyframes underline {
-  100% {
+@keyframes draw {
+  to {
     stroke-dashoffset: 0;
   }
+}
+@-webkit-keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
+}
+body main .solutions_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 8%;
 }
 body main .solution_items {
   color: #FFFFFF;
@@ -11088,12 +11100,32 @@ body main .fourth {
   height: 180px;
   background-color: #0ABF16;
 }
+body main .solution_bottom_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1%;
+}
+body main .technologies_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
 body main .technologies_item {
   border-radius: 20px;
   border: none;
   font-size: calc(16px + 0.625vw);
   color: #FFFFFF;
   font-weight: 600;
+}
+body main .technologies_bottom_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -1%;
+}
+body main .services_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
 }
 body main .card {
   background: #3587F2;
@@ -11129,6 +11161,32 @@ body footer .footer_main {
 }
 body footer .footer_main h2, body footer .footer_main .h2 {
   color: #FFFFFF;
+}
+body footer .footer_main_underline {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 18%;
+}
+body footer svg path {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  -webkit-animation: draw 2s forwards;
+          animation: draw 2s forwards;
+}
+body footer svg g {
+  fill-opacity: 0;
+  -webkit-animation: fill-in 2s forwards;
+          animation: fill-in 2s forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-in {
+  to {
+    fill-opacity: 1;
+  }
 }
 body .form-control {
   background: #333333;
