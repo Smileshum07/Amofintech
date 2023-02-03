@@ -41,25 +41,25 @@
                             <span class="navbar-toggler-icon icon-fluid"></span>
                         </button>
                 
-                        <div class="offcanvas offcanvas-end bg-primary col-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
+                        <div class="offcanvas offcanvas-end bg-primary" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbar">
                             <div class="bg-primary d-block d-lg-none">
                                 <div class="offcanvas-header bg-primary justify-content-end mb-5">
                                     <button type="button" class="btn-close bg-white bg-opacity-75 rounded-5 m-1"
                                         data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
-                                <div class="offcanvas-body bg-primary my-5 mx-5" data-bs-dismiss="offcanvas">
+                                <div class="offcanvas-body bg-primary py-5 mx-5" data-bs-dismiss="offcanvas">
                                     <ul class="header_nav navbar-nav nav-pills my-5 mx-0 mx-sm-4 d-flex d-lg-none">
                                         <li class="nav-item">
-                                            <a class="nav-link text-white mx-0 mx-sm-4" href="#solutions">Solutions</a>
+                                            <a class="nav-link nav-link-sidebar text-white mx-0 mx-sm-4" href="#solutions">Solutions</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white mx-0 mx-sm-4" href="#technologies">Technologies</a>
+                                            <a class="nav-link nav-link-sidebar text-white mx-0 mx-sm-4" href="#technologies">Technologies</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white mx-0 mx-sm-4" href="#services">Services</a>
+                                            <a class="nav-link nav-link-sidebar text-white mx-0 mx-sm-4" href="#services">Services</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link text-white mx-0 mx-sm-4" href="#contacts">Contacts</a>
+                                            <a class="nav-link nav-link-sidebar text-white mx-0 mx-sm-4" href="#contacts">Contacts</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -70,20 +70,34 @@
                 </nav>
             </header>
             <!--main-->
-            <main data-bs-spy="scroll" data-bs-target="#navbar-exemple" class="main conteiner-fluid row">
+            <main class="main conteiner-fluid row" data-bs-spy="scroll" data-bs-target="#navbar-exemple">
                 <!--baner-->
-                <div class="main_baner conteiner-fluid row text-center px-2 px-md-5 py-2 py-md-5 mx-1 me-2 mx-lg-0 rounded-4 bg-light">
-                    <h1 class="main_baner_title mt-1 mt-lg-5 px-1 px-lg-5 pt-1 pt-lg-5 col-12">
-                        We are a Ukrainian fintech company that makes complex solutions simple
+                <div class="main_baner gradient conteiner-fluid row px-2 px-md-5 py-2 py-md-5 ms-0 me-md-5 rounded-4 bg-light">
+                    <h1 class="main_baner_title text-center mt-1 mt-lg-5 px-1 px-lg-5 pt-1 pt-lg-5 col-12">
+                        We are a  <!--animation-->
+                        <span class="underline"> Ukrainian fintech 
+                            <svg width="431" height="30" viewBox="0 0 431 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_30_615)">
+                                <path 
+                                    d="M9.8847 19.3913C42.4895 10.9236 87.0446 6.49731 182.941 4.76527C215.103 4.57282 298.017 3.80303 419.584 10.5387"
+                                    stroke="#1682F9" stroke-width="6.67229" stroke-linecap="round" stroke-dasharray="0.48 0.48" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_30_615">
+                                    <rect width="430.797" height="29.0938" fill="white" transform="translate(0 0.53125)" />
+                                </clipPath>
+                            </defs>
+                            </svg>
+                        </span>company that makes complex solutions simple
                     </h1>
-                    <span class="main_baner_content mx-1 mx-lg-5 mb-1 mb-lg-5 px-1 px-lg-5 pt-1 pt-lg-3 pb-1 pb-lg-5 col-12">
+                    <span class="main_baner_content text-center me-1 me-lg-5 mb-1 mb-lg-5 px-1 px-lg-5 pt-1 pt-lg-3 pb-1 pb-lg-5 col-12">
                     Our success is built upon the best-in-class solutions, modern technology, flexible products, well-designed customer
                     experience, trust relationships, and unique credit decisioning expertise
                     </span>
                 </div>
                 <!--solutions-->
-                <div class="conteiner-fluid row ms-2 mx-md-4 my-1 my-lg-5 py-0 py-md-5 px-0 px-lg-5">
-                    <div class="conteiner-fluid text-wrap ms-1 row">
+                <section class="conteiner-fluid row ms-2 mx-md-4 my-1 my-lg-5 py-0 py-md-5 px-0 px-lg-5">
+                    <div class="conteiner-fluid text-wrap ms-0 row">
                         <h2 id="solutions" class="solution_title py-4 col-12">Our Solutions</h2>
                         <p class="solution_content text-start col-12">
                             amofintech is wholly focused on delivering a solution for payment businesses, banks, marketplaces, chain stores that
@@ -94,27 +108,27 @@
                         </p>
                     </div>
                     <div class="solution_items row">
-                        <div class="d-md-flex flex-wrap justify-content-center conteiner-fluid mx-1 mx-md-0 g-3 row">
-                            <div class="solution_item first px-5 py-4 me-lg-3 me-0 rounded-4 col-lg col-12">
+                        <div class="d-md-flex flex-wrap justify-content-center conteiner-fluid mx-1 g-3 row">
+                            <div class="solution_item first px-4 px-md-5 py-2 py-md-4 me-lg-3 me-0 rounded-4 col-lg col-12">
                                 <h3 class="solution_item_titel pb-3 row">amo for banking</h3>
                                 <p class="solution_item_content text-start row">
                                     Instant issue and process prepaid, debit or credit cards with our high-technology solution, which empowers you to build,
                                     run and optimize your card products.
                                 </p>
                             </div>
-                            <div class="solution_item second px-5 py-4 me-lg-3 me-0 rounded-4 col-lg col-12">
+                            <div class="solution_item second px-4 px-md-5 py-2 py-md-4 me-lg-3 me-0 rounded-4 col-lg col-12">
                                 <h3 class="solution_item_titel pb-3 row">amo for transactions</h3>
                                 <p class="solution_item_content text-start row">
                                     A full set of modular payment-as-a-service solutions to transform your business.
                                 </p>
                             </div>
-                            <div class="solution_item third px-5 py-4 rounded-4 col-lg col-12">
+                            <div class="solution_item third px-4 px-md-5 py-2 py-md-4 me-lg-3 rounded-4 col-lg col-12">
                                 <h3 class="solution_item_titel row pb-3">amo for retail</h3>
                                 <p class="solution_item_content text-start row">
                                 Turnkey solution is based on a mobile application that will allow you to raise customer loyalty to a new level.
                                 </p>
                             </div>
-                            <div class="solution_item fourth h-auto text-start px-5 py-4 rounded-4 col-12">
+                            <div class="solution_item fourth h-auto text-start px-4 px-md-5 py-2 py-md-4 me-lg-3 rounded-4 col-12">
                                 <h3 class="solution_item_titel pb-3 row">partner ecosystem</h3>
                                 <p class="solution_item_content row">
                                     Our customer-centric platform for partners enables the delivery of smarter, more profitable products that offer
@@ -130,17 +144,17 @@
                             changing the customer journey and building new opportunities to scale your business.
                         </p>
                     </div>
-                </div>
+                </section>
                 <!--technologies-->
-                <div class="row py-1 py-lg-5 px-sm-3 px-lg-5 mx-0 mx-sm-3 mx-lg-4">
-                    <div id="technologies" class="ms-3 ms-lg-0 mb-2 mb-lg-5 row">
-                        <h2 class="technologies_title mb-4 row">Our Technologies</h2>
+                <section class="row py-1 py-lg-5 ps-sm-0 px-lg-5 mx-0 mx-sm-3 mx-lg-4">
+                    <div class="ms-3 ms-lg-0 mb-2 mb-lg-5 row">
+                        <h2 class="technologies_title mb-4 row" id="technologies">Our Technologies</h2>
                         <p class="technologies_content text-start row">
                             Our technologies are a combination of industrial solutions with systems of our own development to meet the most
                             demanding needs of users
                         </p>
                     </div>
-                    <div class="technologies_schema my-2 my-xl-5 text-center mx-0 row">
+                    <div class="technologies_schema my-2 my-xl-5 text-center mx-0 px-0 row">
                         <div class="d-xl-flex flex-wrap align-content-center">
                             <div class="col">
                                 <div class="technologies_item card py-3 mb-5 col">Card Processing</div>
@@ -148,7 +162,7 @@
                             </div>
                             <div class="col">
                                 <div class="technologies_item_amo row">
-                                    <div class="technologies_schema_img col ms-4 ms-md-5 pe-5 mt-5" ><img src="./scss/img/AMO.png" class="img_amo img-fluid" alt="AMO"></div>
+                                    <div class="technologies_schema_img col ms-4 ms-md-5 pe-5 mt-5"><img src="./scss/img/AMO.png" class="img_amo img-fluid" alt="AMO"></div>
                                 </div>
                             </div>
                             <div class="pe-0 pe-xl-5 col">
@@ -158,26 +172,26 @@
                         </div>
                     </div>
                     <div class="technologies_list row">
-                        <h2 class="mt-5 text-center text-start ps-5 ps-md-0 col-12">amofintech creates opportunities that will change your life</h2>
-                        <ul class="technologies_list_items pt-3 pt-md-5 ps-5 col">
+                        <h2 class="mt-5 text-start ps-4 ps-md-3 pe-0 me-0 col-12">amofintech creates opportunities that will change your life</h2>
+                        <ul class="technologies_list_items pt-3 pt-md-5 ms-0 ms-md-5 ps-lg-0 ps-5 pe-0 col">
                             <li class="technologies_list_item mb-3 col-12">simple implementation in business process (easily integration with your business process)</li>
                             <li class="technologies_list_item mb-3 col-12">convenient ecosystem for partners</li>
                             <li class="technologies_list_item mb-3 col-12">scale quickly with a cloud-based technology</li>
                             <li class="technologies_list_item mb-3 col-12">own reliable and secure platform</li>
                         </ul>
                     </div>
-                </div>
+                </section>
                 <!--services-->
-                <div class="py-0 py-xxl-5 my-1 my-xxl-5 px-3 px-sm-4 mx-0 mx-md-2">
-                    <div id="services" class="d-flex flex-wrap">
-                        <div class="mb-4 ms-0 me-1 ms-lg-5 text-wrap row">
-                            <h2 class="services_title mb-4 col-12">Our Services</h2>
+                <section class="py-0 py-xxl-5 my-1 my-xxl-5 px-3 px-sm-4 mx-0 mx-md-2">
+                    <div class="d-flex flex-wrap">
+                        <div class="mb-4 ms-3 ms-md-5 text-wrap row">
+                            <h2 class="services_title mb-4 col-12" id="services">Our Services</h2>
                             <p class="services_content text-start col-12">
                                 amofintech develops specialized environments for your industry
                             </p>
                         </div>
                         <div class="services_schame conteiner-fluid row">
-                            <div class="services_schame_item banks px-4 px-lg-5 pt-4 pt-lg-5 ms-3 ms-lg-5 mx-0 mx-md-2 mx-lg-4 mb-4 mb-xxl-0 col-11 col-lg-4">
+                            <div class="services_schame_item banks px-4 px-lg-5 pt-4 pt-lg-5 ms-3 ms-lg-5 mx-md-2 mx-lg-4 mb-4 mb-xxl-0 col-11 col-lg-4">
                                 <h3 class="services_schame_item_title mb-3 col-12">for Banks</h3>
                                 <p class="services_schame_item_content text-start col-12">
                                     We help banks create appealing customer experiences, engineering secure and reliable applications, and bringing industry
@@ -215,13 +229,13 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </main>
         </div>
             <!--footer-->
             <footer class="wrapper conteiner-fluid w-100">
 
-                <div class="footer_main my-2 my-lg-5 mx-2 mx-lg-4 px-2 px-lg-5 py-2 py-lg-5 row">
+                <section class="footer_main my-2 my-lg-5 mx-2 mx-lg-4 px-2 px-lg-5 py-2 py-lg-5 row">
                     <h2 class="footer_main_title ms-3 mx-md-5 ps-0 px-md-5 py-5">Want to learn more?</h2>
                     <div class="d-xl-flex d-flex-wrap">
                         <div class="footer_main_form d-flex flex-wrap ms-0 ms-md-5 ps-1 px-md-5 py-5 col">
@@ -231,21 +245,21 @@
 
                                 <div class="footer_main_form_item_name col-6">
                                     <label for="validationCustom01" class="form-label"></label>
-                                    <input type="name" class="form-control" id="validationCustom01" placeholder="Name" required>
+                                    <input type="name" class="form-control rounded-1" id="validationCustom01" placeholder="Name" required>
                                     <div class="invalid-feedback">
                                         It is important to complete this field.
                                     </div>
                                 </div>
                                 <div class="footer_main_form_item_email col-6">
                                     <label for="validationCustom02" class="form-label"></label>
-                                    <input type="email" class="form-control" id="validationCustom02" placeholder="Email address" required>
+                                    <input type="email" class="form-control rounded-1" id="validationCustom02" placeholder="Email address" required>
                                     <div class="invalid-feedback">
                                         It is important to complete this field.
                                     </div>
                                 </div>
                                 <div class="footer_main_form_item_message mb-5 col-12">
                                     <label for="validationCustom03" class="form-label"></label>
-                                    <textarea class="form-control" id="validationCustom03" rows="10" placeholder="Message" required></textarea>
+                                    <textarea class="form-control rounded-1" id="validationCustom03" rows="10" placeholder="Message" required></textarea>
                                     <div class="invalid-feedback">
                                         It is important to complete this field.
                                     </div>
@@ -261,7 +275,7 @@
                         <div class="row">
                             <div class="d-md-flex">
                                 <!--contacts-->
-                                <div id="contacts" class="footer_main_contacts conteiner-fluid ms-1 ms-md-4 ps-0 ps-md-5 pt-5 col">
+                                <div class="footer_main_contacts conteiner-fluid ms-1 ms-md-4 ps-0 ps-md-5 pt-5 col" id="contacts">
                                     <h3 class="footer_main_contacts_title mb-4">Contacts</h3>
                                     <a class="link link-warning" href="#">info@amofintech.com</a>
                                 </div>
@@ -273,7 +287,7 @@
                             </div>
                         </div>
                     </div>    
-                </div>
+                </section>
                 <!--bottom-->
                 <div class="footer_bottom conteiner-fluid ps-0 ps-md-4 me-0 pe-0 row">
                     <div class="footer_bottom_AMO ms-5 ps-2 ps-md-5 my-3 col-4">© 2023 AMO FinTech LLC.</div>
@@ -289,7 +303,8 @@
                 </div>
             </footer>
     
-    <script src="/./node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
     </body>
 </html>
