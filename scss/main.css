@@ -11040,20 +11040,19 @@ body main .gradient {
 body main .main_baner_underline {
   font-size: calc(18px + 2.5vw);
   display: flex;
-  flex-wrap: wrap;
   margin-top: 0px;
-  margin-left: 42%;
+  margin-left: 40%;
 }
-body main svg path {
+body main svg g .active {
   stroke-dasharray: 420;
   stroke-dashoffset: 420;
-  -webkit-animation: draw 2s forwards;
-          animation: draw 2s forwards;
+  -webkit-animation: draw 4s forwards;
+          animation: draw 4s forwards;
 }
-body main svg g {
+body main svg path .active {
   fill-opacity: 0;
-  -webkit-animation: fill-in 2s forwards;
-          animation: fill-in 2s forwards;
+  -webkit-animation: fill-in 4s forwards;
+          animation: fill-in 4s forwards;
 }
 @-webkit-keyframes draw {
   to {
@@ -11077,8 +11076,6 @@ body main svg g {
 }
 body main .solutions_underline {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 8%;
 }
 body main .solution_items {
   color: #FFFFFF;
@@ -11102,13 +11099,9 @@ body main .fourth {
 }
 body main .solution_bottom_underline {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -1%;
 }
 body main .technologies_underline {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 5%;
 }
 body main .technologies_item {
   border-radius: 20px;
@@ -11116,16 +11109,28 @@ body main .technologies_item {
   font-size: calc(16px + 0.625vw);
   color: #FFFFFF;
   font-weight: 600;
+  transform: translateY(400%);
+  transition: transform 0.9s ease;
 }
-body main .technologies_bottom_underline {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -1%;
+body main .technologies_item.active {
+  transform: translateY(0);
 }
-body main .services_underline {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10%;
+body main .technologies_schema_img {
+  transform: translateY(400%);
+  transition: transform 0.9s ease;
+}
+body main .technologies_schema_img.active {
+  transform: translateY(0);
+}
+body main ul {
+  list-style: none;
+}
+body main ul > li:before {
+  content: "✔";
+  top: 0;
+  left: 0;
+  color: #3587F2;
+  margin-right: 10px;
 }
 body main .card {
   background: #3587F2;
@@ -11164,19 +11169,18 @@ body footer .footer_main h2, body footer .footer_main .h2 {
 }
 body footer .footer_main_underline {
   display: flex;
-  flex-wrap: wrap;
   margin-left: 18%;
 }
-body footer svg path {
+body footer svg g .active {
   stroke-dasharray: 420;
   stroke-dashoffset: 420;
-  -webkit-animation: draw 2s forwards;
-          animation: draw 2s forwards;
+  -webkit-animation: draw 4s forwards;
+          animation: draw 4s forwards;
 }
-body footer svg g {
+body footer svg path .active {
   fill-opacity: 0;
-  -webkit-animation: fill-in 2s forwards;
-          animation: fill-in 2s forwards;
+  -webkit-animation: fill-in 4s forwards;
+          animation: fill-in 4s forwards;
 }
 @keyframes draw {
   to {
