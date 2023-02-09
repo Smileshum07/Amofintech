@@ -36,9 +36,6 @@ function onAnimation() {
 
 
 
-
-
-
 //anchor scroll
 
 const anchors = document.querySelectorAll('.nav-link-sidebar[href*="#"]');

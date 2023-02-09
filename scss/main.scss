@@ -50,6 +50,8 @@ body {
     
     .navbar {
         backdrop-filter: blur(10px);
+
+    
        
         .nav-pills {
             --bs-nav-pills-link-active-bg: none;
@@ -79,12 +81,7 @@ body {
             transition: width .3s ease-in-out;
         }
 
-        .offcanvas-body {
-            .nav-link:focus,
-            .nav-link:hover {
-                color: rgb(111, 111, 112);
-            }
-        }
+        
     }
         
 
@@ -398,4 +395,3 @@ body {
 
 }
 
- 

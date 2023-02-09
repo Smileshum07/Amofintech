@@ -10979,10 +10979,6 @@ body .navbar .nav-link:after {
   -moz--transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
-body .navbar .offcanvas-body .nav-link:focus,
-body .navbar .offcanvas-body .nav-link:hover {
-  color: rgb(111, 111, 112);
-}
 body h1, body .h1,
 body h2,
 body .h2 {
