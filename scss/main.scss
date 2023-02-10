@@ -83,6 +83,16 @@ body {
 
         
     }
+
+    .offcanvas-body {
+        ul .nav-link-sidebar {
+            text-decoration: none;
+            font-size: $font-size-nav;
+            font-weight: $font-weight-nav;
+            
+
+        }
+    }
         
 
     h1,

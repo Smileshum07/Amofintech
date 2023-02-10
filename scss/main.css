@@ -10979,6 +10979,11 @@ body .navbar .nav-link:after {
   -moz--transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
+body .offcanvas-body ul .nav-link-sidebar {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
 body h1, body .h1,
 body h2,
 body .h2 {
