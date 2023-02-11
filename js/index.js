@@ -38,21 +38,16 @@ function onAnimation() {
 
 //anchor scroll
 
-const anchors = document.querySelectorAll('.offcanvas-body.nav-link-sidebar[href*="#"]');
+const anchors = document.querySelectorAll('.nav-link-sidebar[href*="#"]');
 for (let anchore of anchors) {
-    anchore.addEventListener("touchstart", function (event) {
+    anchore.addEventListener("click", function (event) {
         event.preventDefault();
         const blockID = anchore.getAttribute('href');
-
+        
         document.querySelector('' + blockID).scrollIntoView({
             behavior: "smooth",
             block: "end"
         })
-
-
     })
 }
-
-
-//close offcanvas
 
