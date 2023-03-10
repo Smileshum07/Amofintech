@@ -1,7 +1,5 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-
-
 //fonts-size
 
 $font-size-h1_h2: 55px;
@@ -18,8 +16,6 @@ $font-weight-h1_h2: 700;
 $font-weight-h3: 600;
 $font-weight-nav: 500;
 $font-weight-main: 400;
-
-
 
 //colors
 
@@ -47,12 +43,9 @@ body {
     color: $main-color;
     font-weight: $font-weight-main;
      
-    
     .navbar {
         backdrop-filter: blur(10px);
 
-    
-       
         .nav-pills {
             --bs-nav-pills-link-active-bg: none;
         }
@@ -80,8 +73,6 @@ body {
             -moz--transition: width .3s ease-in-out;
             transition: width .3s ease-in-out;
         }
-
-        
     }
 
     .offcanvas-body {
@@ -89,21 +80,16 @@ body {
             text-decoration: none;
             font-size: $font-size-nav;
             font-weight: $font-weight-nav;
-            
-
         }
     }
         
-
     h1,
     h2 {
         font-size: calc(16px + 32 * (100vw / 1280));
         font-weight: $font-weight-h1_h2;
         color: $main-color;
     }
-
     
-
     h3 {
         font-size: calc(16px + 8 * (100vw / 1280));
         font-weight: $font-weight-h3;
@@ -112,13 +98,13 @@ body {
     p {
         line-height: normal;
         word-spacing: 4px;
-
     }
 
     main {
         position: relative;
         
 // animation baner 
+
         .gradient {
             background: 
             linear-gradient(29deg, rgba(37, 90, 246, 0.272233893557423) 46%, rgba(234, 246, 37, 0.272233893557423) 48%, rgba(214, 225, 246, 0.272233893557423) 49%, rgba(113, 162, 252, 0.272233893557423) 51%, rgba(62, 127, 244, 0.5887605042016807) 53%, rgba(246, 246, 214, 0.633578431372549) 55%, rgba(244, 242, 92, 0.633578431372549) 57%, rgba(45, 135, 251, 0.6896008403361344) 60%, rgba(239, 238, 93, 0.4318977591036415) 62%);
@@ -128,7 +114,6 @@ body {
             height: auto;
         }
         
-               
         @keyframes gradient {
             0% {
                 background-position: 0% 50%;
@@ -145,235 +130,6 @@ body {
                 background-position: 0% 50%;
             }
         }
-
-
-
-/*
-        .main_baner {
-          
-           
-            @keyframes move {
-                    100% {
-                        transform: translate3d(0, 0, 1px) rotate(360deg);
-                    }
-                }
-                div .circle {
-                    width: 20vmin;
-                    height: 20vmin;
-                    border-radius: 20vmin;
-                    backface-visibility: hidden;
-                    position: absolute;
-                    animation: move;
-                    animation-duration: 45;
-                    animation-timing-function: linear;
-                    animation-iteration-count: infinite;
-                }
-
-
-                div .circle:nth-child(0) {
-                    color: #f7ad2b;
-                    top: 98%;
-                    left: 98%;
-                    animation-duration: 23s;
-                    animation-delay: -12s;
-                    transform-origin: 20vw 25vh;
-                    box-shadow: 40vmin 0 5.3118982714067675vmin currentColor;
-                }
-
-                div .circle:nth-child(1) {
-                    color: #2e3bea;
-                    top: 58%;
-                    left: 35%;
-                    animation-duration: 51s;
-                    animation-delay: -2s;
-                    transform-origin: -9vw 14vh;
-                    box-shadow: -40vmin 0 5.409551023382982vmin currentColor;
-                }
-
-                div .circle:nth-child(2) {
-                    color: #2e3bea;
-                    top: 20%;
-                    left: 91%;
-                    animation-duration: 36s;
-                    animation-delay: -39s;
-                    transform-origin: 11vw 19vh;
-                    box-shadow: -40vmin 0 5.41885125692505vmin currentColor;
-                }
-
-                div .circle:nth-child(3) {
-                    color: #e5d1d1;
-                    top: 11%;
-                    left: 80%;
-                    animation-duration: 26s;
-                    animation-delay: -1s;
-                    transform-origin: -17vw 23vh;
-                    box-shadow: -40vmin 0 5.458591299109493vmin currentColor;
-                }
-
-                div .circle:nth-child(4) {
-                    color: #2e3bea;
-                    top: 31%;
-                    left: 38%;
-                    animation-duration: 52s;
-                    animation-delay: -38s;
-                    transform-origin: 5vw -21vh;
-                    box-shadow: -40vmin 0 5.205043518247718vmin currentColor;
-                }
-
-                div .circle:nth-child(5) {
-                    color: #2e3bea;
-                    top: 95%;
-                    left: 88%;
-                    animation-duration: 28s;
-                    animation-delay: -41s;
-                    transform-origin: -8vw 19vh;
-                    box-shadow: 40vmin 0 5.565734160937317vmin currentColor;
-                }
-
-                div .circle:nth-child(6) {
-                    color: #e5d1d1;
-                    top: 59%;
-                    left: 52%;
-                    animation-duration: 38s;
-                    animation-delay: -13s;
-                    transform-origin: 21vw 11vh;
-                    box-shadow: -40vmin 0 5.579721303948546vmin currentColor;
-                }
-
-                div .circle:nth-child(7) {
-                    color: #e5d1d1;
-                    top: 33%;
-                    left: 27%;
-                    animation-duration: 35s;
-                    animation-delay: -11s;
-                    transform-origin: -4vw 2vh;
-                    box-shadow: 40vmin 0 5.274568993924023vmin currentColor;
-                }
-
-                div .circle:nth-child(8) {
-                    color: #2e3bea;
-                    top: 21%;
-                    left: 97%;
-                    animation-duration: 54s;
-                    animation-delay: -18s;
-                    transform-origin: 20vw 21vh;
-                    box-shadow: -40vmin 0 5.42364947676591vmin currentColor;
-                }
-
-                div .circle:nth-child(9) {
-                    color: #f7ad2b;
-                    top: 16%;
-                    left: 40%;
-                    animation-duration: 9s;
-                    animation-delay: -29s;
-                    transform-origin: -21vw -17vh;
-                    box-shadow: -40vmin 0 5.552878227951888vmin currentColor;
-                }
-
-                div .circle:nth-child(10) {
-                    color: #2e3bea;
-                    top: 14%;
-                    left: 66%;
-                    animation-duration: 51s;
-                    animation-delay: -36s;
-                    transform-origin: -22vw -22vh;
-                    box-shadow: -40vmin 0 5.154633182314736vmin currentColor;
-                }
-
-                div .circle:nth-child(11) {
-                    color: #f7ad2b;
-                    top: 80%;
-                    left: 23%;
-                    animation-duration: 38s;
-                    animation-delay: -17s;
-                    transform-origin: 25vw -15vh;
-                    box-shadow: -40vmin 0 5.1673424116185895vmin currentColor;
-                }
-
-                div .circle:nth-child(12) {
-                    color: #e5d1d1;
-                    top: 9%;
-                    left: 72%;
-                    animation-duration: 33s;
-                    animation-delay: -31s;
-                    transform-origin: 21vw -23vh;
-                    box-shadow: -40vmin 0 5.757239953088428vmin currentColor;
-                }
-
-                div .circle:nth-child(13) {
-                    color: #2e3bea;
-                    top: 44%;
-                    left: 49%;
-                    animation-duration: 27s;
-                    animation-delay: -16s;
-                    transform-origin: 2vw -7vh;
-                    box-shadow: -40vmin 0 5.330658619709398vmin currentColor;
-                }
-
-                div .circle:nth-child(14) {
-                    color: #e5d1d1;
-                    top: 84%;
-                    left: 48%;
-                    animation-duration: 6s;
-                    animation-delay: -6s;
-                    transform-origin: 15vw -4vh;
-                    box-shadow: -40vmin 0 5.363751530373634vmin currentColor;
-                }
-
-                div .circle:nth-child(15) {
-                    color: #e5d1d1;
-                    top: 88%;
-                    left: 73%;
-                    animation-duration: 51s;
-                    animation-delay: -34s;
-                    transform-origin: -9vw -24vh;
-                    box-shadow: -40vmin 0 5.392236016194864vmin currentColor;
-                }
-
-                div .circle:nth-child(16) {
-                    color: #2e3bea;
-                    top: 5%;
-                    left: 81%;
-                    animation-duration: 14s;
-                    animation-delay: -48s;
-                    transform-origin: -18vw 0vh;
-                    box-shadow: -40vmin 0 5.838323418338509vmin currentColor;
-                }
-
-                div .circle:nth-child(17) {
-                    color: #e5d1d1;
-                    top: 12%;
-                    left: 28%;
-                    animation-duration: 53s;
-                    animation-delay: -38s;
-                    transform-origin: 5vw 11vh;
-                    box-shadow: -40vmin 0 5.951687320973556vmin currentColor;
-                }
-
-                div .circle:nth-child(18) {
-                    color: #e5d1d1;
-                    top: 42%;
-                    left: 97%;
-                    animation-duration: 54s;
-                    animation-delay: -21s;
-                    transform-origin: -4vw -19vh;
-                    box-shadow: -40vmin 0 5.374814410660978vmin currentColor;
-                }
-
-                div .circle:nth-child(19) {
-                    color: #e5d1d1;
-                    top: 80%;
-                    left: 87%;
-                    animation-duration: 6s;
-                    animation-delay: -23s;
-                    transform-origin: -10vw -7vh;
-                    box-shadow: 40vmin 0 5.544915984453121vmin currentColor;
-                }
-
-            }
-
-
-*/
 
         .main_baner_underline {
             font-size: calc(18px + 32 * (100vw / 1280));
@@ -407,19 +163,13 @@ body {
                 to {
                     fill-opacity: 1;
                 }
-                
             }
-       
     }
-
         .solutions_underline {
             display: flex;
-            
         }
 
-        
-
-       .solution_items {
+        .solution_items {
             color: $element-color;
 
                 .solution_item_content {
@@ -446,12 +196,10 @@ body {
         }
         .solution_bottom_underline {
             display: flex;
-               
         }
         
         .technologies_underline {
             display: flex;
-            
         }
 
         .technologies_item {
@@ -462,8 +210,6 @@ body {
             font-weight: $font-weight-h3;
             transform: translateY(400%);
             transition: transform 0.9s ease;
-
-            
         }
         .technologies_item.active {
             transform: translateY(0);
@@ -471,7 +217,6 @@ body {
         .technologies_schema_img {
             transform: translateY(400%);
             transition: transform 0.9s ease;
-               
         }
         .technologies_schema_img.active {
             transform: translateY(0);
@@ -481,7 +226,6 @@ body {
             list-style: none;
         }
 
-              
         ul > li:before {
             content: '\2714';
             top: 0;
@@ -510,7 +254,6 @@ body {
             color: $element-color;
             border-radius: 20px;
             font-size: calc(14px + 4 * (100vw / 1280));
-
         }
 
         .banks {
@@ -568,11 +311,8 @@ body {
                 to {
                     fill-opacity: 1;
                 }
-                
             }
-       
     }
-        
 }
    
     .form-control {
@@ -594,7 +334,6 @@ body {
         outline: 0;
         box-shadow: 0 0 0 0.15rem #F2B90F;
     }
-
 
     .btn {
         background: #333333;
@@ -630,6 +369,5 @@ body {
     .svg {
         color: $bottom-color;
     }
-
 }
 
