@@ -57,8 +57,9 @@ const offcanvas = document.querySelector('.offcanvas')
 const links = document.querySelectorAll('.nav-link-sidebar');
 links.forEach((link) => { link.addEventListener("click", closeOnClick); });
 function closeOnClick() {
-    
     offcanvas.classList.remove('show');
     const backdrops = document.querySelectorAll('.offcanvas-backdrop');
-    backdrops.classList.remove('show');
+    backdrops.forEach(backdrop => backdrop.classList.remove('show'));
 }
+
+
